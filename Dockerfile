@@ -14,6 +14,6 @@ RUN chmod +x /home/ctfuser/program
 RUN chmod +x /home/ctfuser/ynetd
 
 USER ctfuser
-EXPOSE 3000
+EXPOSE 10000
 
-CMD ./ynetd -p 3000 ./program
+CMD ./ynetd -p 10000 ./program
