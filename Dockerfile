@@ -11,6 +11,7 @@ COPY ynetd .
 
 RUN gcc -o /home/ctfuser/program /home/ctfuser/program.c -fno-stack-protector -no-pie
 RUN chmod +x /home/ctfuser/program
+RUN chmod +x /home/ctfuser/ynetd
 
 USER ctfuser
 EXPOSE 3000
