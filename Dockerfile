@@ -13,7 +13,7 @@ RUN gcc -o /home/ctfuser/program /home/ctfuser/program.c -fno-stack-protector -n
 RUN chmod +x /home/ctfuser/program
 RUN chmod +x /home/ctfuser/ynetd
 
-HEALTHCHECK NONE
+HEALTHCHECK CMD echo "healthy"
 
 USER ctfuser
 EXPOSE 10000
